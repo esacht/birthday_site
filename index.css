@@ -43,7 +43,6 @@ body {
       50%{background-position:100% 19%}
       100%{background-position:0% 82%}
   }
-
 }
 
 .info {
@@ -104,6 +103,7 @@ body {
     right: 25%;
     font-size: 150px;
     color: white;
+    z-index: 1;
   }
 
 #unicornPicture {
