@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
   const birthdayTime = document.querySelector('#birthdayTime')
-
   const countdownContainer = document.querySelector('#countdown')
   const daysCountdown = document.querySelector('#days')
   const hoursCountdown = document.querySelector('#hours')
@@ -13,8 +12,16 @@ document.addEventListener('DOMContentLoaded', function() {
   let eventDate = new Date( yearOfTheEvent, 01, 04 )
   const isItFebruary4th = currentTime.getMonth() === 01 && currentTime.getDate() === 04
 
+
   function countdown() {
     const now = new Date()
+
+    if (now > eventDate) {
+      eventDate = new Date( yearOfTheEvent + 1, 01, 04 )
+    } else if ( now.getFullYear() === eventDate.getFullYear() + 1 ) {
+      eventDate = new Date( now.getFullYear(), 01, 04 )
+    }
+
     const currentTime = now.getTime()
     const eventTime = eventDate.getTime()
     const remainingTime = eventTime - currentTime
@@ -33,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
       countdownContainer.style.display = "none"
       birthdayTime.style.display = "block"
-      yearOfTheEvent++
 
     } else {
 
@@ -47,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     } // end of if ( isItFebruary4th )
 
   } // end of countdown
+
   countdown()
 
 }) // end of DOMContentLoaded
