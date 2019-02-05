@@ -12,11 +12,16 @@ document.addEventListener('DOMContentLoaded', function() {
   let eventDate = new Date( yearOfTheEvent, 01, 04 )
   const isItFebruary4th = currentTime.getMonth() === 01 && currentTime.getDate() === 04
 
+  console.log("currentTime: ", currentTime)
+  console.log("yearOfTheEvent: ", yearOfTheEvent)
+  console.log("eventDate: ", eventDate)
+
+
 
   function countdown() {
     const now = new Date()
 
-    if (now > eventDate) {
+    if ( now > eventDate ) {
       eventDate = new Date( yearOfTheEvent + 1, 01, 04 )
     } else if ( now.getFullYear() === eventDate.getFullYear() + 1 ) {
       eventDate = new Date( now.getFullYear(), 01, 04 )
@@ -25,6 +30,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentTime = now.getTime()
     const eventTime = eventDate.getTime()
     const remainingTime = eventTime - currentTime
+
+    console.log("now: ", now)
+    console.log("eventDate, inside the countdown: ", eventDate)
 
     let seconds = Math.floor( remainingTime / 1000 )
     let minutes = Math.floor( seconds / 60 )
