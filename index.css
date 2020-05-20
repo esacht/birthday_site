@@ -3,8 +3,8 @@ body {
 }
 
 h1 {
-  color: navy;
-  margin-left: 20px;
+  color: black;
+  text-align: center;
 }
 
 .stuart-iframe-container {
@@ -20,6 +20,7 @@ h1 {
    position: absolute;
    top: 0;
    width: 100%;
+   margin: auto;
 }
  
 /* 4x3 Aspect Ratio */
@@ -40,6 +41,7 @@ h1 {
    position: absolute;
    top: 0;
    width: 100%;
+   margin: auto;
 }
  
 /* 4x3 Aspect Ratio */
@@ -60,6 +62,7 @@ h1 {
    position: absolute;
    top: 0;
    width: 100%;
+   margin: auto;
 }
  
 /* 4x3 Aspect Ratio */
