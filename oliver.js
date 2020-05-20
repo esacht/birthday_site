@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const currentTime = new Date()
   let yearOfTheEvent = currentTime.getFullYear()
   let eventDate = new Date( yearOfTheEvent, 08, 25 )
-  const isItMay19th = currentTime.getMonth() === 08 && currentTime.getDate() === 25
+  const isItSeptember25th = currentTime.getMonth() === 08 && currentTime.getDate() === 25
 
 
   function countdown() {
