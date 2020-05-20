@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const now = new Date()
 
     if ( now > eventDate ) {
-      eventDate = new Date( yearOfTheEvent + 1, 08 , 25 )
+      eventDate = new Date( yearOfTheEvent + 1, 08, 25 )
     } else if ( now.getFullYear() === eventDate.getFullYear() + 1 ) {
-      eventDate = new Date( now.getFullYear(), 08 , 25 )
+      eventDate = new Date( now.getFullYear(), 08, 25 )
     }
 
     const currentTime = now.getTime()
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       setTimeout(countdown, 1000)
 
-    } // end of if ( isItMay19th )
+    } // end of if ( isItSeptember25th )
 
   } // end of countdown
 
