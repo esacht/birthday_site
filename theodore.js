@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const currentTime = new Date()
   let yearOfTheEvent = currentTime.getFullYear()
   let eventDate = new Date( yearOfTheEvent, 5, 11 )
-  const isItMay11th = currentTime.getMonth() === 5 && currentTime.getDate() === 11
+  const isItMay11th = currentTime.getMonth() === 4 && currentTime.getDate() === 11
 
 
   function countdown() {
