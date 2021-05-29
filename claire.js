@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const currentTime = new Date()
   let yearOfTheEvent = currentTime.getFullYear()
   let eventDate = new Date( yearOfTheEvent, 09, 04 )
-  const isItMay19th = currentTime.getMonth() === 09 && currentTime.getDate() === 04
+  const isItOctober4th = currentTime.getMonth() === 09 && currentTime.getDate() === 04
 
 
   function countdown() {
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
     minutes %= 60
     seconds %= 60
 
-    if ( isItMay19th ) {
+    if ( isItOctober4th ) {
       console.log('Happy birthday, Claire!')
 
       countdownContainer.style.display = "none"
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       setTimeout(countdown, 1000)
 
-    } // end of if ( isItMay19th )
+    } // end of if ( isItOctober4th )
 
   } // end of countdown
 
