@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const currentTime = new Date()
   let yearOfTheEvent = currentTime.getFullYear()
-  let eventDate = new Date( yearOfTheEvent, 5, 11 )
+  let eventDate = new Date( yearOfTheEvent, 04, 11 )
   const isItMay11th = currentTime.getMonth() === 04 && currentTime.getDate() === 11
 
 
